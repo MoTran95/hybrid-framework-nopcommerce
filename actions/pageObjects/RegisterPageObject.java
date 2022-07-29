@@ -8,7 +8,6 @@ import pageUIs.RegisterPageUI;
 public class RegisterPageObject extends BasePage {
 	private WebDriver driver;
 	public RegisterPageObject(WebDriver driver) {
-		super();
 		this.driver = driver;
 	}
 	public void clickToRegisterButton() {
