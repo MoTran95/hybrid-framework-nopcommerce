@@ -3,15 +3,14 @@ package com.nopcommerce.user;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageFactory.HomePageObject;
+import pageFactory.LoginPageObject;
+import pageFactory.RegisterPageObject;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -69,51 +68,51 @@ public class Level_05_Page_Factory extends BaseTest {
 
 	}
 
-//	@Test
-//	public void Login_03_Email_Not_Found() {
-//		homePage.clickToLoginLink();
-//		loginPage = new LoginPageObject(driver);
-//		loginPage.inputToEmailTextbox(notFoundEmail);
-//		loginPage.clickToLoginButton();
-//		Assert.assertEquals(loginPage.getErrorMessageAtUnsuccessfull(),
-//				"Login was unsuccessful. Please correct the errors and try again.\nNo customer account found");
-//
-//	}
-//
-//	@Test
-//	public void Login_04_Existing_Email_Empty_Password() {
-//		homePage.clickToLoginLink();
-//		loginPage = new LoginPageObject(driver);
-//		loginPage.inputToEmailTextbox(validEmail);
-//		loginPage.inputToPasswordTextbox("");
-//		loginPage.clickToLoginButton();
-//		Assert.assertEquals(loginPage.getErrorMessageAtUnsuccessfull(),
-//				"Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
-//
-//	}
-//
-//	@Test
-//	public void Login_05_Existing_Email_Incorrect_Password() {
-//		homePage.clickToLoginLink();
-//		loginPage = new LoginPageObject(driver);
-//		loginPage.inputToEmailTextbox(validEmail);
-//		loginPage.inputToPasswordTextbox(invalidPassword);
-//		loginPage.clickToLoginButton();
-//		Assert.assertEquals(loginPage.getErrorMessageAtUnsuccessfull(),
-//				"Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
-//
-//	}
-//
-//	@Test
-//	public void Login_06_Valid_Email_Password() {
-//		homePage.clickToLoginLink();
-//		loginPage = new LoginPageObject(driver);
-//		loginPage.inputToEmailTextbox(validEmail);
-//		loginPage.inputToPasswordTextbox(validPassword);
-//		loginPage.clickToLoginButton();
-//		homePage = new HomePageObject(driver);
-//		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
-//	}
+	@Test
+	public void Login_03_Email_Not_Found() {
+		homePage.clickToLoginLink();
+		loginPage = new LoginPageObject(driver);
+		loginPage.inputToEmailTextbox(notFoundEmail);
+		loginPage.clickToLoginButton();
+		Assert.assertEquals(loginPage.getErrorMessageAtUnsuccessfull(),
+				"Login was unsuccessful. Please correct the errors and try again.\nNo customer account found");
+
+	}
+
+	@Test
+	public void Login_04_Existing_Email_Empty_Password() {
+		homePage.clickToLoginLink();
+		loginPage = new LoginPageObject(driver);
+		loginPage.inputToEmailTextbox(validEmail);
+		loginPage.inputToPasswordTextbox("");
+		loginPage.clickToLoginButton();
+		Assert.assertEquals(loginPage.getErrorMessageAtUnsuccessfull(),
+				"Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
+
+	}
+
+	@Test
+	public void Login_05_Existing_Email_Incorrect_Password() {
+		homePage.clickToLoginLink();
+		loginPage = new LoginPageObject(driver);
+		loginPage.inputToEmailTextbox(validEmail);
+		loginPage.inputToPasswordTextbox(invalidPassword);
+		loginPage.clickToLoginButton();
+		Assert.assertEquals(loginPage.getErrorMessageAtUnsuccessfull(),
+				"Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
+
+	}
+
+	@Test
+	public void Login_06_Valid_Email_Password() {
+		homePage.clickToLoginLink();
+		loginPage = new LoginPageObject(driver);
+		loginPage.inputToEmailTextbox(validEmail);
+		loginPage.inputToPasswordTextbox(validPassword);
+		loginPage.clickToLoginButton();
+		homePage = new HomePageObject(driver);
+		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
+	}
 
 	@AfterClass
 	public void afterClass() {

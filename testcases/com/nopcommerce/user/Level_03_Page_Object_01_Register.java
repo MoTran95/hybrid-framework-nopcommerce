@@ -3,8 +3,8 @@ package com.nopcommerce.user;
 import org.testng.annotations.Test;
 
 import commons.BasePage;
-import pageObjects.HomePageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.nopcommerce.user.UserHomePageObject;
+import pageObjects.nopcommerce.user.UserRegisterPageObject;
 
 import org.testng.annotations.BeforeClass;
 
@@ -20,8 +20,8 @@ import org.testng.annotations.AfterClass;
 public class Level_03_Page_Object_01_Register extends BasePage {
 	private WebDriver driver;
 	private String emailAddress, firstName, lastName, password;
-	private HomePageObject homepage;
-	private RegisterPageObject registerPage;
+	private UserHomePageObject homepage;
+	private UserRegisterPageObject registerPage;
 	private String projectPath = System.getProperty("user.dir");
 
 	@BeforeClass
@@ -30,7 +30,7 @@ public class Level_03_Page_Object_01_Register extends BasePage {
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://demo.nopcommerce.com/");
-		homepage = new HomePageObject(driver);
+		homepage = new UserHomePageObject(driver);
 		firstName = "Automation";
 		lastName = "FC";
 		password = "123456";
@@ -41,8 +41,8 @@ public class Level_03_Page_Object_01_Register extends BasePage {
 	@Test
 	public void Register_01_Register_Empty_Data() {
 
-		homepage.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homepage.openRegisterPage();
+		registerPage = new UserRegisterPageObject(driver);
 		registerPage.clickToRegisterButton();
 
 		Assert.assertEquals(registerPage.getErrorMessageAtFirstNameTextbox(), "First name is required.");
@@ -56,8 +56,8 @@ public class Level_03_Page_Object_01_Register extends BasePage {
 	@Test
 	public void Register_02_Register_Invalid_Email() {
 
-		homepage.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homepage.openRegisterPage();
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
@@ -74,8 +74,8 @@ public class Level_03_Page_Object_01_Register extends BasePage {
 	@Test
 	public void Register_03_Register_Success() {
 
-		homepage.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homepage.openRegisterPage();
+		registerPage = new UserRegisterPageObject(driver);
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
 		registerPage.inputToEmailTextbox(emailAddress);
@@ -90,8 +90,8 @@ public class Level_03_Page_Object_01_Register extends BasePage {
 	@Test
 	public void Register_04_Register_Existing_Email() {
 
-		homepage.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homepage.openRegisterPage();
+		registerPage = new UserRegisterPageObject(driver);
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
 		registerPage.inputToEmailTextbox(emailAddress);
@@ -104,8 +104,8 @@ public class Level_03_Page_Object_01_Register extends BasePage {
 
 	@Test
 	public void Register_05_Register_Password_Less_Than_6_Chars() {
-		homepage.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homepage.openRegisterPage();
+		registerPage = new UserRegisterPageObject(driver);
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
 		registerPage.inputToEmailTextbox(emailAddress);
@@ -119,8 +119,8 @@ public class Level_03_Page_Object_01_Register extends BasePage {
 
 	@Test
 	public void Register_06_Register_Invalid_Confirm_Password() {
-		homepage.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homepage.openRegisterPage();
+		registerPage = new UserRegisterPageObject(driver);
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
 		registerPage.inputToEmailTextbox(emailAddress);

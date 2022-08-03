@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite  name="NopCommerce">
- <test name="Run on ">
+ <test name="Run on firefox">
   <parameter name = "browser" value = "firefox"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_04_Multiple_Browser"/>
+      <class name="com.nopcommerce.user.Level_08_Switch_Role"/>
     </classes>
   </test> 
 </suite>
