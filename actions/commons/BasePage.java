@@ -1,11 +1,16 @@
 package commons;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import java.util.Set;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -141,7 +146,7 @@ public class BasePage {
 	private WebElement getWebElement(WebDriver driver, String locatorType) {
 		return driver.findElement(getByLocator(locatorType));
 	}
-	private List<WebElement> getListWebElement(WebDriver driver, String locatorType ) {
+	public List<WebElement> getListWebElement(WebDriver driver, String locatorType ) {
 		return driver.findElements(getByLocator(locatorType));
 	}
 	public void clickToElement(WebDriver driver, String locatorType) {
@@ -252,8 +257,14 @@ public class BasePage {
 		Actions action = new Actions(driver);
 		action.moveToElement(getWebElement(driver, locatorType)).perform();
 	}
-
-
+	public void pressKeyToElement(WebDriver driver, String locatorType, Keys key) {
+		Actions action = new Actions(driver);
+		action.sendKeys(getWebElement(driver, locatorType)).perform();
+	}
+	public void pressKeyToElement(WebDriver driver, String locatorType, Keys key, String...dynamicValues) {
+		Actions action = new Actions(driver);
+		action.sendKeys(getWebElement(driver, getDynamicXpath(locatorType,dynamicValues))).perform();
+	}
 
 	public void scrollToBottomPage(WebDriver driver) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
@@ -406,10 +417,6 @@ public class BasePage {
 		waitForElementClickable(driver, BasePageUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
 		clickToElement(driver, BasePageUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
 	}
-	public static final String ADDRESS_LINK = "xpath=//div[@class='block block-account-navigation']//a[text()='Addresses']";
-	public static final String MY_PRODUCT_REVIEW_LINK = "xpath=//div[@class='block block-account-navigation']//a[text()='My product reviews']";
-	public static final String REWARD_POINT_LINK = "xpath=//div[@class='block block-account-navigation']//a[text()='Reward points']";
-	public static final String CUSTOMER_INFOR_LINK = "xpath=//div[@class='block block-account-navigation']//a[text()='Customer info']";
 	
 	public UserHomePageObject clickToLogoutLinkAtUserPage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUI.LOGOUT_LINK_AT_USER);
@@ -421,7 +428,24 @@ public class BasePage {
 		clickToElement(driver, BasePageUI.LOGOUT_LINK_AT_ADMIN);
 		return PageGeneratorManager.getAdminLoginPage(driver);
 	}
-	private long longTimeout = 30;
-	private long shortTimeout = 5;
+    public List<String> readFile(String filePath){
+    	List<String> expectedAllCountryValues = new ArrayList<String>();
+    	try {
+			File file = new File(filePath );
+	      Scanner myReader = new Scanner(file);
+	      while (myReader.hasNextLine()) {
+	        String data = myReader.nextLine();
+	        expectedAllCountryValues.add(data);
+	      }
+	      myReader.close();
+	    } catch (FileNotFoundException e) {
+	      System.out.println("An error occurred.");
+	      e.printStackTrace();
+	    }
+		return expectedAllCountryValues;
+    	
+    }
+	private long longTimeout = GlobalConstants.LONG_TIMEOUT;
+	private long shortTimeout = GlobalConstants.SHORT_TIMEOUT;
 	
 }
