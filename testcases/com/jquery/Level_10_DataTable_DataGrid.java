@@ -1,4 +1,4 @@
-package com.jquery.datatable;
+package com.jquery;
 
 import org.testng.annotations.Test;
 
@@ -56,16 +56,38 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 		homePage.sleepInSecond(3);
 	}
 
-	@Test
 	public void Table_03() {
 		expectedAllCountryValues = homePage.readFile(GlobalConstants.COUNTRY_DATA + "country.txt");
 		actualAllCountryValues = homePage.getValueEachRowAtAllPage();
 		Assert.assertEquals(actualAllCountryValues, expectedAllCountryValues);
 	}
+	@Test
+	public void Table_04_Action_At_Any_Row() {
+		homePage.clickToLoadButton();
+//		homePage.enterToTextboxByColumnNameAtRowNumber("Album","2","Michael 97");
+//		homePage.enterToTextboxByColumnNameAtRowNumber("Artist","4","Michael Jackson");
+//		homePage.enterToTextboxByColumnNameAtRowNumber("Year","3","1997");
+//		homePage.enterToTextboxByColumnNameAtRowNumber("Price","1","150");
+//		homePage.selectDropdownByColumnNameAtRowNumber("Origin","5","Japan");
+//		homePage.selectDropdownByColumnNameAtRowNumber("Origin","1","US");
+//		homePage.checkToCheckboxByColumnNameAtRowNumber("With Poster?","3");
+//		homePage.checkToCheckboxByColumnNameAtRowNumber("With Poster?","5");
+//		homePage.unCheckToCheckboxByColumnNameAtRowNumber("With Poster?","1");
+//		homePage.unCheckToCheckboxByColumnNameAtRowNumber("With Poster?","2");
+//		homePage.unCheckToCheckboxByColumnNameAtRowNumber("With Poster?","4");
+		homePage.clickToIconByRowNumber("1","Remove Current Row");
+		homePage.clickToIconByRowNumber("1","Insert Row Above");
+		homePage.clickToIconByRowNumber("3","Move Up");
+		homePage.clickToIconByRowNumber("5","Remove Current Row");
+		homePage.clickToIconByRowNumber("4","Remove Current Row");
+		homePage.clickToIconByRowNumber("3","Remove Current Row");
+		homePage.clickToIconByRowNumber("2","Remove Current Row");
+		homePage.clickToIconByRowNumber("1","Remove Current Row");
+	}
 	
 	@AfterClass
 	public void afterClass() {
-		driver.quit();
+		//driver.quit();
 	}
 
 	private WebDriver driver;
