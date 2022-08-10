@@ -26,6 +26,7 @@ import pageObjects.nopcommerce.user.UserCustomerInforPageObject;
 import pageObjects.nopcommerce.user.UserHomePageObject;
 import pageObjects.nopcommerce.user.UserMyProductReviewPageObject;
 import pageObjects.nopcommerce.user.UserRewardPointPage;
+import pageUIs.jQuery.uploadFiles.BasePageUiJqueryUpload;
 import pageUIs.nopcommerce.user.BasePageUI;
 
 public class BasePage {
@@ -339,14 +340,19 @@ public class BasePage {
 		return (String) jsExecutor.executeScript("return arguments[0].validationMessage;", getWebElement(driver, locatorType));
 	}
 
-	public boolean isImageLoaded(WebDriver driver, String locator) {
+	public boolean isImageLoaded(WebDriver driver, String locatorType) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", getWebElement(driver, locator));
+		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", getWebElement(driver, locatorType));
 		if (status) {
 			return true;
 		} else {
 			return false;
 		}
+	}
+	public boolean isImageLoaded(WebDriver driver,String locatorType, String... dynamicValues) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", getWebElement(driver,  getDynamicXpath(locatorType,dynamicValues)));
+		return status;
 	}
 	public void waitForElementVisible(WebDriver driver, String locatorType) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
@@ -456,6 +462,15 @@ public class BasePage {
 	    }
 		return expectedAllCountryValues;
     	
+    }
+    public void uploadMultipleFiles(WebDriver driver, String...fileNames) {
+    	String filePath = GlobalConstants.UPLOAD_FILE;
+    	String fullFileName = "";
+    	for (String file : fileNames) {
+			fullFileName = fullFileName + filePath + file + "\n";
+		}
+    	fullFileName = fullFileName.trim();
+    	getWebElement(driver, BasePageUiJqueryUpload.UPLOAD_FILE).sendKeys(fullFileName);
     }
 	private long longTimeout = GlobalConstants.LONG_TIMEOUT;
 	private long shortTimeout = GlobalConstants.SHORT_TIMEOUT;

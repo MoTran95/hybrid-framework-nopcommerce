@@ -4,8 +4,8 @@ import org.testng.annotations.Test;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
-import pageObjects.jQuery.HomePageObject;
-import pageObjects.jQuery.PageGeneratorManager;
+import pageObjects.jQuery.dataTable.HomePageObject;
+import pageObjects.jQuery.dataTable.PageGeneratorManager;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -64,17 +64,17 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 	@Test
 	public void Table_04_Action_At_Any_Row() {
 		homePage.clickToLoadButton();
-//		homePage.enterToTextboxByColumnNameAtRowNumber("Album","2","Michael 97");
-//		homePage.enterToTextboxByColumnNameAtRowNumber("Artist","4","Michael Jackson");
-//		homePage.enterToTextboxByColumnNameAtRowNumber("Year","3","1997");
-//		homePage.enterToTextboxByColumnNameAtRowNumber("Price","1","150");
-//		homePage.selectDropdownByColumnNameAtRowNumber("Origin","5","Japan");
-//		homePage.selectDropdownByColumnNameAtRowNumber("Origin","1","US");
-//		homePage.checkToCheckboxByColumnNameAtRowNumber("With Poster?","3");
-//		homePage.checkToCheckboxByColumnNameAtRowNumber("With Poster?","5");
-//		homePage.unCheckToCheckboxByColumnNameAtRowNumber("With Poster?","1");
-//		homePage.unCheckToCheckboxByColumnNameAtRowNumber("With Poster?","2");
-//		homePage.unCheckToCheckboxByColumnNameAtRowNumber("With Poster?","4");
+		homePage.enterToTextboxByColumnNameAtRowNumber("Album","2","Michael 97");
+		homePage.enterToTextboxByColumnNameAtRowNumber("Artist","4","Michael Jackson");
+		homePage.enterToTextboxByColumnNameAtRowNumber("Year","3","1997");
+		homePage.enterToTextboxByColumnNameAtRowNumber("Price","1","150");
+		homePage.selectDropdownByColumnNameAtRowNumber("Origin","5","Japan");
+		homePage.selectDropdownByColumnNameAtRowNumber("Origin","1","US");
+		homePage.checkToCheckboxByColumnNameAtRowNumber("With Poster?","3");
+		homePage.checkToCheckboxByColumnNameAtRowNumber("With Poster?","5");
+		homePage.unCheckToCheckboxByColumnNameAtRowNumber("With Poster?","1");
+		homePage.unCheckToCheckboxByColumnNameAtRowNumber("With Poster?","2");
+		homePage.unCheckToCheckboxByColumnNameAtRowNumber("With Poster?","4");
 		homePage.clickToIconByRowNumber("1","Remove Current Row");
 		homePage.clickToIconByRowNumber("1","Insert Row Above");
 		homePage.clickToIconByRowNumber("3","Move Up");
@@ -87,7 +87,7 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 	
 	@AfterClass
 	public void afterClass() {
-		//driver.quit();
+		driver.quit();
 	}
 
 	private WebDriver driver;
