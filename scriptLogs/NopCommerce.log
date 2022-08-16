@@ -1,0 +1,147 @@
+[INFO ] [2022-08-15 17:20:09,256] Register - step 01: open register page
+[INFO ] [2022-08-15 17:20:09,772] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-08-15 17:20:09,876] Register - step 03: enter to lastName textbox with value is 'FC'
+[INFO ] [2022-08-15 17:20:09,931] Register - step 04: enter to email textbox with value is 'John6020@hotmail.com'
+[INFO ] [2022-08-15 17:20:09,988] Register - step 05: enter to password textbox with value is '123456'
+[INFO ] [2022-08-15 17:20:10,051] Register - step 06: enter to password textbox with value is '123456'
+[INFO ] [2022-08-15 17:20:10,117] Register - step 07: click register button
+[INFO ] [2022-08-15 17:20:10,916] Register - step 08: verify register success message is displayed 
+[INFO ] [2022-08-15 17:20:10,955] Register - step 09: click logout button
+[INFO ] [2022-08-15 17:20:11,622] Login - step 01: open login page
+[INFO ] [2022-08-15 17:20:12,125] Login - step 02: enter email to textbox with value is 'John6020@hotmail.com'
+[INFO ] [2022-08-15 17:20:12,171] Login - step 03: enter password to textbox with value is '123456'
+[INFO ] [2022-08-15 17:20:12,216] Login - step 04: click login button
+[INFO ] [2022-08-15 17:23:12,530] Register - step 01: open register page
+[INFO ] [2022-08-15 17:23:13,089] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-08-15 17:23:13,181] Register - step 03: enter to lastName textbox with value is 'FC'
+[INFO ] [2022-08-15 17:23:13,237] Register - step 04: enter to email textbox with value is 'John3709@hotmail.com'
+[INFO ] [2022-08-15 17:23:13,296] Register - step 05: enter to password textbox with value is '123456'
+[INFO ] [2022-08-15 17:23:13,357] Register - step 06: enter to password textbox with value is '123456'
+[INFO ] [2022-08-15 17:23:13,422] Register - step 07: click register button
+[INFO ] [2022-08-15 17:23:14,167] Register - step 08: verify register success message is displayed 
+[INFO ] [2022-08-15 17:23:44,215] Login - step 01: open login page
+[INFO ] [2022-08-15 17:23:44,755] Login - step 02: enter email to textbox with value is 'John3709@hotmail.com'
+[INFO ] [2022-08-15 17:23:44,802] Login - step 03: enter password to textbox with value is '123456'
+[INFO ] [2022-08-15 17:23:44,844] Login - step 04: click login button
+[INFO ] [2022-08-15 17:26:46,393] Register - step 01: open register page
+[INFO ] [2022-08-15 17:26:47,012] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-08-15 17:26:47,073] Register - step 03: enter to lastName textbox with value is 'FC'
+[INFO ] [2022-08-15 17:26:47,122] Register - step 04: enter to email textbox with value is 'John8067@hotmail.com'
+[INFO ] [2022-08-15 17:26:47,176] Register - step 05: enter to password textbox with value is '123456'
+[INFO ] [2022-08-15 17:26:47,230] Register - step 06: enter to password textbox with value is '123456'
+[INFO ] [2022-08-15 17:26:47,302] Register - step 07: click register button
+[INFO ] [2022-08-15 17:26:48,047] Register - step 08: verify register success message is displayed 
+[INFO ] [2022-08-15 17:26:58,959] Login - step 01: open login page
+[INFO ] [2022-08-15 21:52:48,693] Register - step 01: open register page
+[INFO ] [2022-08-15 21:52:49,289] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-08-15 21:52:49,362] Register - step 03: enter to lastName textbox with value is 'FC'
+[INFO ] [2022-08-15 21:52:49,430] Register - step 04: enter to email textbox with value is 'John2291@hotmail.com'
+[INFO ] [2022-08-15 21:52:49,495] Register - step 05: enter to password textbox with value is '123456'
+[INFO ] [2022-08-15 21:52:49,568] Register - step 06: enter to password textbox with value is '123456'
+[INFO ] [2022-08-15 21:52:49,634] Register - step 07: click register button
+[INFO ] [2022-08-15 21:52:51,713] Register - step 08: verify register success message is displayed 
+[INFO ] [2022-08-15 21:52:51,751]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-08-15 21:52:51,752] Register - step 09: click logout button
+[INFO ] [2022-08-15 21:52:52,509] Login - step 01: open login page
+[INFO ] [2022-08-15 21:52:54,664] Login - step 02: enter email to textbox with value is 'John2291@hotmail.com'
+[INFO ] [2022-08-15 21:52:54,712] Login - step 03: enter password to textbox with value is '123456'
+[INFO ] [2022-08-15 21:52:54,771] Login - step 04: click login button
+[INFO ] [2022-08-15 22:22:40,853] Register - step 01: open register page
+[INFO ] [2022-08-15 22:22:41,436] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-08-15 22:22:41,509] Register - step 03: enter to lastName textbox with value is 'FC'
+[INFO ] [2022-08-15 22:22:41,555] Register - step 04: enter to email textbox with value is 'John2755@hotmail.com'
+[INFO ] [2022-08-15 22:22:41,615] Register - step 05: enter to password textbox with value is '123456'
+[INFO ] [2022-08-15 22:22:41,660] Register - step 06: enter to password textbox with value is '123456'
+[INFO ] [2022-08-15 22:22:41,719] Register - step 07: click register button
+[INFO ] [2022-08-15 22:22:42,596] Register - step 08: verify register success message is displayed 
+[INFO ] [2022-08-15 22:22:42,662]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-15 22:22:42,662] Register - step 09: click logout button
+[INFO ] [2022-08-15 22:22:43,399] Login - step 01: open login page
+[INFO ] [2022-08-15 22:22:43,887] Login - step 02: enter email to textbox with value is 'John2755@hotmail.com'
+[INFO ] [2022-08-15 22:22:43,944] Login - step 03: enter password to textbox with value is '123456'
+[INFO ] [2022-08-15 22:22:43,986] Login - step 04: click login button
+[INFO ] [2022-08-15 22:28:12,787] Register - step 01: open register page
+[INFO ] [2022-08-15 22:28:13,323] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-08-15 22:28:13,426] Register - step 03: enter to lastName textbox with value is 'FC'
+[INFO ] [2022-08-15 22:28:13,480] Register - step 04: enter to email textbox with value is 'John7517@hotmail.com'
+[INFO ] [2022-08-15 22:28:13,541] Register - step 05: enter to password textbox with value is '123456'
+[INFO ] [2022-08-15 22:28:13,598] Register - step 06: enter to password textbox with value is '123456'
+[INFO ] [2022-08-15 22:28:13,661] Register - step 07: click register button
+[INFO ] [2022-08-15 22:28:14,568] Register - step 08: verify register success message is displayed 
+[INFO ] [2022-08-15 22:28:14,633]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-15 22:28:14,633] Register - step 09: click logout button
+[INFO ] [2022-08-15 22:28:15,381] Login - step 01: open login page
+[INFO ] [2022-08-15 22:28:15,917] Login - step 02: enter email to textbox with value is 'John7517@hotmail.com'
+[INFO ] [2022-08-15 22:28:15,970] Login - step 03: enter password to textbox with value is '123456'
+[INFO ] [2022-08-15 22:28:16,031] Login - step 04: click login button
+[INFO ] [2022-08-15 22:32:10,524] Register - step 01: open register page
+[INFO ] [2022-08-15 22:32:11,111] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-08-15 22:32:11,181] Register - step 03: enter to lastName textbox with value is 'FC'
+[INFO ] [2022-08-15 22:32:11,236] Register - step 04: enter to email textbox with value is 'John6968@hotmail.com'
+[INFO ] [2022-08-15 22:32:11,306] Register - step 05: enter to password textbox with value is '123456'
+[INFO ] [2022-08-15 22:32:11,362] Register - step 06: enter to password textbox with value is '123456'
+[INFO ] [2022-08-15 22:32:11,432] Register - step 07: click register button
+[INFO ] [2022-08-15 22:32:12,252] Register - step 08: verify register success message is displayed 
+[INFO ] [2022-08-15 22:32:12,307]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-15 22:32:12,308] Register - step 09: click logout button
+[INFO ] [2022-08-15 22:32:13,012] Login - step 01: open login page
+[INFO ] [2022-08-15 22:32:13,481] Login - step 02: enter email to textbox with value is 'John6968@hotmail.com'
+[INFO ] [2022-08-15 22:32:13,536] Login - step 03: enter password to textbox with value is '123456'
+[INFO ] [2022-08-15 22:32:13,579] Login - step 04: click login button
+[INFO ] [2022-08-15 22:32:42,726] Register - step 01: open register page
+[INFO ] [2022-08-15 22:32:43,269] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-08-15 22:32:43,328] Register - step 03: enter to lastName textbox with value is 'FC'
+[INFO ] [2022-08-15 22:32:43,496] Login - step 01: open login page
+[INFO ] [2022-08-15 22:33:06,457] Register - step 01: open register page
+[INFO ] [2022-08-15 22:33:06,842] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-08-15 22:33:10,960] Login - step 01: open login page
+[INFO ] [2022-08-16 10:59:47,673] Register - step 01: open register page
+[INFO ] [2022-08-16 10:59:48,267] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-08-16 10:59:48,391] Register - step 03: enter to lastName textbox with value is 'FC'
+[INFO ] [2022-08-16 10:59:48,457] Register - step 04: enter to email textbox with value is 'John9014@hotmail.com'
+[INFO ] [2022-08-16 10:59:48,523] Register - step 05: enter to password textbox with value is '123456'
+[INFO ] [2022-08-16 10:59:48,599] Register - step 06: enter to password textbox with value is '123456'
+[INFO ] [2022-08-16 10:59:48,673] Register - step 07: click register button
+[INFO ] [2022-08-16 10:59:51,126] Register - step 08: verify register success message is displayed 
+[INFO ] [2022-08-16 10:59:51,165]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-08-16 10:59:51,166] Register - step 09: click logout button
+[INFO ] [2022-08-16 10:59:52,376] Login - step 01: open login page
+[INFO ] [2022-08-16 10:59:52,937] Login - step 02: enter email to textbox with value is 'John9014@hotmail.com'
+[INFO ] [2022-08-16 10:59:52,993] Login - step 03: enter password to textbox with value is '123456'
+[INFO ] [2022-08-16 10:59:53,053] Login - step 04: click login button
+[INFO ] [2022-08-16 11:49:27,535] Register - step 01: open register page
+[INFO ] [2022-08-16 11:49:28,168] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-08-16 11:49:28,245] Register - step 03: enter to lastName textbox with value is 'FC'
+[INFO ] [2022-08-16 11:49:28,297] Register - step 04: enter to email textbox with value is 'John5708@hotmail.com'
+[INFO ] [2022-08-16 11:49:28,360] Register - step 05: enter to password textbox with value is '123456'
+[INFO ] [2022-08-16 11:49:28,416] Register - step 06: enter to password textbox with value is '123456'
+[INFO ] [2022-08-16 11:49:28,469] Register - step 07: click register button
+[INFO ] [2022-08-16 11:49:29,358] Register - step 08: verify register success message is displayed 
+[INFO ] [2022-08-16 11:49:29,599] Login - step 01: open login page
+[INFO ] [2022-08-16 11:55:07,221] Register - step 01: open register page
+[INFO ] [2022-08-16 11:55:07,798] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-08-16 11:55:07,873] Register - step 03: enter to lastName textbox with value is 'FC'
+[INFO ] [2022-08-16 11:55:07,929] Register - step 04: enter to email textbox with value is 'John7098@hotmail.com'
+[INFO ] [2022-08-16 11:55:07,996] Register - step 05: enter to password textbox with value is '123456'
+[INFO ] [2022-08-16 11:55:08,093] Register - step 06: enter to password textbox with value is '123456'
+[INFO ] [2022-08-16 11:55:08,161] Register - step 07: click register button
+[INFO ] [2022-08-16 11:55:09,015] Register - step 08: verify register success message is displayed 
+[INFO ] [2022-08-16 11:55:09,208] Login - step 01: open login page
+[INFO ] [2022-08-16 11:57:31,077] Register - step 01: open register page
+[INFO ] [2022-08-16 11:57:31,604] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-08-16 11:57:31,702] Register - step 03: enter to lastName textbox with value is 'FC'
+[INFO ] [2022-08-16 11:57:31,783] Register - step 04: enter to email textbox with value is 'John4744@hotmail.com'
+[INFO ] [2022-08-16 11:57:31,843] Register - step 05: enter to password textbox with value is '123456'
+[INFO ] [2022-08-16 11:57:31,902] Register - step 06: enter to password textbox with value is '123456'
+[INFO ] [2022-08-16 11:57:31,957] Register - step 07: click register button
+[INFO ] [2022-08-16 11:57:32,776] Register - step 08: verify register success message is displayed 
+[INFO ] [2022-08-16 11:57:32,980] Login - step 01: open login page
+[INFO ] [2022-08-16 12:02:00,524] Register - step 01: open register page
+[INFO ] [2022-08-16 12:02:01,036] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-08-16 12:02:01,098] Register - step 03: enter to lastName textbox with value is 'FC'
+[INFO ] [2022-08-16 12:02:01,162] Register - step 04: enter to email textbox with value is 'John2234@hotmail.com'
+[INFO ] [2022-08-16 12:02:01,262] Register - step 05: enter to password textbox with value is '123456'
+[INFO ] [2022-08-16 12:02:01,386] Register - step 06: enter to password textbox with value is '123456'
+[INFO ] [2022-08-16 12:02:01,482] Register - step 07: click register button
+[INFO ] [2022-08-16 12:02:02,319] Register - step 08: verify register success message is displayed 
+[INFO ] [2022-08-16 12:02:02,495] Login - step 01: open login page

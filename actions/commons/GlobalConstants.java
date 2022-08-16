@@ -14,6 +14,7 @@ public class GlobalConstants {
 	public static final String DOWNLOAD_FILE = PROJECT_PATH + File.separator + "downloadFiles";
 	public static final String DRAG_DROP_HTML5 = PROJECT_PATH + File.separator + "dragDropHTML5";
 	public static final String BROWSER_LOG = PROJECT_PATH + File.separator + "browserLogs";
+	public static final String REPORTNG_SCREENSHOT = PROJECT_PATH + File.separator + "reportNGScreenShots" + File.separator;
 	public static final String COUNTRY_DATA = PROJECT_PATH + File.separator + "countryData" + File.separator;
 	
 	public static final String DB_DEV_URL = "32.18.252.185:9860";
@@ -23,6 +24,7 @@ public class GlobalConstants {
 	public static final String DB_TEST_URL = "32.18.252.185:9860";
 	public static final String DB_TEST_USER = "automationfc";
 	public static final String DB_TEST_PASS = "P@ssw0rld";
+	public static final String JAVA_VERSION = System.getProperty("java.version");
 	
 	public static final long SHORT_TIMEOUT = 5;
 	public static final long LONG_TIMEOUT = 30;
