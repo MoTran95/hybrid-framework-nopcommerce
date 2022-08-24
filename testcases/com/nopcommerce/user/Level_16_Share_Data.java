@@ -2,30 +2,23 @@ package com.nopcommerce.user;
 
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.Status;
-
 import commons.BaseTest;
 import commons.PageGeneratorManager;
-import io.qameta.allure.Description;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
+
 import pageObjects.nopcommerce.user.UserHomePageObject;
 import pageObjects.nopcommerce.user.UserLoginPageObject;
 
 import pageObjects.nopcommerce.user.UserRegisterPageObject;
-import reportConfig.ExtentTestManager;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
-
-import java.lang.reflect.Method;
 
 import org.openqa.selenium.WebDriver;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class Level_14_Allure extends BaseTest {
+public class Level_16_Share_Data extends BaseTest {
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
@@ -37,49 +30,46 @@ public class Level_14_Allure extends BaseTest {
 		email = "John" + generateFakeNumber() + "@hotmail.com";
 
 	}
-	@Description("Register to system")
-	@Severity(SeverityLevel.NORMAL)
+
 	@Test
 	public void User_01_Register() {
-		
+		log.info("Register - step 01: open register page");
 		registerPage = homePage.openRegisterPage();
-		
+		log.info("Register - step 02: enter to firstname textbox with value is '" + firstName + "'");
 		registerPage.inputToFirstNameTextbox(firstName);
 
-		
+		log.info("Register - step 03: enter to lastName textbox with value is '" + lastName + "'");
 		registerPage.inputToLastNameTextbox(lastName);
 
-		
+		log.info("Register - step 04: enter to email textbox with value is '" + email + "'");
 		registerPage.inputToEmailTextbox(email);
 
-		
+		log.info("Register - step 05: enter to password textbox with value is '" + password + "'");
 		registerPage.inputToPasswordTextbox(password);
 
-		
+		log.info("Register - step 06: enter to password textbox with value is '" + password + "'");
 		registerPage.inputToConfirmPasswordTextbox(password);
 
-	
+		log.info("Register - step 07: click register button");
 		registerPage.clickToRegisterButton();
 
-
-		Assert.assertEquals(registerPage.getRegisterSucessMessage(), "Your registration complete");
-		
+		log.info("Register - step 08: verify register success message is displayed ");
+		verifyEquals(registerPage.getRegisterSucessMessage(), "Your registration ");
+		log.info("Register - step 09: click logout button");
+		homePage = registerPage.clickToLogoutLink();
 
 	}
-	@Description("Login to system")
-	@Severity(SeverityLevel.NORMAL)
+
 	@Test
 	public void User_02_Login() {
-
-		homePage = registerPage.clickToLogoutLink();
-		
+		log.info("Login - step 01: open login page");
 		loginPage = homePage.openLoginPage();
-		
+		log.info("Login - step 02: enter email to textbox with value is '" + email + "'");
 		loginPage.inputToEmailTextbox(email);
-		
+		log.info("Login - step 03: enter password to textbox with value is '" + password + "'");
 		loginPage.inputToPasswordTextbox(password);
 
-		
+		log.info("Login - step 04: click login button");
 		homePage = loginPage.clickToLoginButton();
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 
