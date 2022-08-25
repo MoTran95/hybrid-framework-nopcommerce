@@ -145,3 +145,21 @@
 [INFO ] [2022-08-16 12:02:01,482] Register - step 07: click register button
 [INFO ] [2022-08-16 12:02:02,319] Register - step 08: verify register success message is displayed 
 [INFO ] [2022-08-16 12:02:02,495] Login - step 01: open login page
+[INFO ] [2022-08-24 15:44:26,467] Login - step 01: open login page
+[INFO ] [2022-08-24 15:44:27,016] Login - step 02: enter email to textbox with value is 'null'
+[INFO ] [2022-08-24 15:46:58,323] Login - step 01: open login page
+[INFO ] [2022-08-24 15:47:00,505] Login - step 02: enter email to textbox with value is 'John3827@hotmail.com'
+[INFO ] [2022-08-24 15:47:00,560] Login - step 03: enter password to textbox with value is '123456'
+[INFO ] [2022-08-24 15:47:00,620] Login - step 04: click login button
+[INFO ] [2022-08-24 16:34:26,137] Pre-condition - step 01: open login page
+[INFO ] [2022-08-24 16:34:26,717] Pre-condition - step 02: Set cookie and reload page 
+[INFO ] [2022-08-24 16:34:31,055] Pre-condition - step 03: Verify My Account link is displayed 
+[INFO ] [2022-08-24 16:34:31,102]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-24 16:35:37,014] Pre-condition - step 01: open login page
+[INFO ] [2022-08-24 16:35:37,555] Pre-condition - step 02: Set cookie and reload page 
+[INFO ] [2022-08-24 16:35:41,094] Pre-condition - step 03: Verify My Account link is displayed 
+[INFO ] [2022-08-24 16:35:41,139]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-25 15:45:02,824] Pre-condition - step 01: open login page
+[INFO ] [2022-08-25 15:45:03,382] Pre-condition - step 02: Set cookie and reload page 
+[INFO ] [2022-08-25 15:45:06,993] Pre-condition - step 03: Verify My Account link is displayed 
+[INFO ] [2022-08-25 15:45:07,037]  -------------------------- PASSED -------------------------- 

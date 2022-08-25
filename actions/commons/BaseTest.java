@@ -21,15 +21,15 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 	private WebDriver driver;
 	protected final Log log;
+
 	@BeforeSuite
 	public void initBeforeSuite() {
 		deleteAllureReport();
 	}
-	
+
 	protected BaseTest() {
 		log = LogFactory.getLog(getClass());
 	}
-	String projectPath = System.getProperty("user.dir");
 
 	protected WebDriver getBrowserDriver(String browserName) {
 		BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
@@ -166,6 +166,7 @@ public class BaseTest {
 	public WebDriver getDriver() {
 		return this.driver;
 	}
+
 	public void deleteAllureReport() {
 		try {
 
@@ -182,5 +183,6 @@ public class BaseTest {
 		}
 	}
 
-}
+	String projectPath = System.getProperty("user.dir");
 
+}

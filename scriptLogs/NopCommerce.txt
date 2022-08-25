@@ -1,0 +1,4 @@
+[INFO ] [2022-08-25 15:45:02,824] Pre-condition - step 01: open login page
+[INFO ] [2022-08-25 15:45:03,382] Pre-condition - step 02: Set cookie and reload page 
+[INFO ] [2022-08-25 15:45:06,993] Pre-condition - step 03: Verify My Account link is displayed 
+[INFO ] [2022-08-25 15:45:07,037]  -------------------------- PASSED -------------------------- 
