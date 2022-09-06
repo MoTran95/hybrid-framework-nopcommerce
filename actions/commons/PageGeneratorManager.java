@@ -34,10 +34,10 @@ public class PageGeneratorManager {
 	public static UserRewardPointPage getUserRewardPointPage(WebDriver driver) {
 		return new UserRewardPointPage(driver);
 	}
-	public static AdminLoginPageObject getAdminLoginPage(WebDriver driver) {
-		return new AdminLoginPageObject(driver);
-	}
 	public static AdminDashboardPageObject getAdminDashboardPage(WebDriver driver) {
 		return new AdminDashboardPageObject(driver);
+	}
+	public static AdminLoginPageObject getAdminLoginPage(WebDriver driver) {
+		return new AdminLoginPageObject(driver);
 	}
 }

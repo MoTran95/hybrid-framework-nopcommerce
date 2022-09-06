@@ -1,0 +1,11 @@
+package pageUIs.wordpress;
+
+public class AdminPostAddNewPageUI {
+	public static final String TITLE_TEXTBOX = "css=h1.wp-block-post-title";
+	public static final String BODY_BUTTON = "css=p[class*='block-editor-default']";
+	public static final String BODY_TEXTBOX = "css=p.block-editor-rich-text__editable";
+	public static final String PUBLISH_BUTTON_OR_UPDATE_BUTTON = "xpath=//div[@class='edit-post-header']//button[text()='%s']";
+	public static final String PRE_PUBLISH_BUTTON = "xpath=//div[@class='editor-post-publish-panel']//button[text()='Publish']";
+	public static final String PUBLISH_MESSAGE_OR_UPDATED_MESSAGE = "xpath=//div[@class='components-snackbar__content'and text()='%s']";
+
+}
