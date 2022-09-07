@@ -16,6 +16,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeSuite;
@@ -51,7 +52,9 @@ public class BaseTest {
 		} else if (browserList == BrowserList.CHROME) {
 			System.out.println("Run Chrome");
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--lang=en");
+			driver = new ChromeDriver(options);
 		} else if (browserList == BrowserList.H_CHROME) {
 			System.out.println("Run Chrome");
 			WebDriverManager.chromedriver().setup();
@@ -63,6 +66,10 @@ public class BaseTest {
 			System.out.println("Run edge");
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
+		} else if (browserList == BrowserList.SAFARI) {
+			System.out.println("Run SAFARI");
+			WebDriverManager.safaridriver().setup();
+			driver = new SafariDriver();
 		} else {
 			throw new RuntimeException("Browser name invalid.");
 		}
@@ -99,6 +106,10 @@ public class BaseTest {
 			System.out.println("Run edge");
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
+		} else if (browserList == BrowserList.SAFARI) {
+			System.out.println("Run SAFARI");
+			WebDriverManager.safaridriver().setup();
+			driver = new SafariDriver();
 		} else {
 			throw new RuntimeException("Browser name invalid.");
 		}
@@ -186,6 +197,7 @@ public class BaseTest {
 			System.out.print(e.getMessage());
 		}
 	}
+
 	protected void closeBrowserAndDriver() {
 		String cmd = "";
 		try {
@@ -246,6 +258,7 @@ public class BaseTest {
 			}
 		}
 	}
+
 	protected String getCurrentDay() {
 		DateTime nowUTC = new DateTime();
 		int day = nowUTC.getDayOfMonth();
@@ -261,11 +274,13 @@ public class BaseTest {
 		}
 		return String.valueOf(month);
 	}
+
 	protected String getCurrentMonthByText() {
 		DateTime now = new DateTime();
 		int month = now.getMonthOfYear();
-		String[] names = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
-		return names[month-1];
+		String[] names = { "January", "February", "March", "April", "May", "June", "July", "August", "September",
+				"October", "November", "December" };
+		return names[month - 1];
 	}
 
 	protected String getCurrentYear() {
@@ -274,7 +289,7 @@ public class BaseTest {
 	}
 
 	protected String getCurrentToday() {
-		return   getCurrentMonthByText() +" "+ getCurrentDay()+", " + getCurrentYear();
+		return getCurrentMonthByText() + " " + getCurrentDay() + ", " + getCurrentYear();
 	}
 
 	String projectPath = System.getProperty("user.dir");
