@@ -1,82 +1,21 @@
-[INFO ] [2022-09-05 18:21:05,390] Pre-Condition - Step 01: Open browser and admin Url
-[INFO ] [2022-09-05 18:21:11,465] Pre-Condition - Step 02: Enter to Username textbox with value: automationfc
-[INFO ] [2022-09-05 18:21:11,662] Pre-Condition - Step 03: Enter to Password textbox with value: automationfc
-[INFO ] [2022-09-05 18:21:11,723] Pre-Condition - Step 04: Click to Login Button
-[INFO ] [2022-09-05 18:21:18,257] Create_Post - Step 01: Click to 'Posts' menu link
-[INFO ] [2022-09-05 18:21:18,962] Create_Post - Step 02: Click to 'Add New' button
-[INFO ] [2022-09-05 18:21:25,359] Create_Post - Step 03: Enter to Post title
-[INFO ] [2022-09-05 18:21:25,977] Create_Post - Step 04: Enter to body
-[INFO ] [2022-09-05 18:21:27,339] Create_Post - Step 05: Click to publish button 
-[INFO ] [2022-09-05 18:21:27,839] Create_Post - Step 06: Click to pre-publish button 
-[INFO ] [2022-09-05 18:21:28,144] Create_Post - Step 07: Verify post published message is displayed
-[INFO ] [2022-09-05 18:21:28,579]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:28,687] Search_Post - Step 01: Open 'Search Post' page
-[INFO ] [2022-09-05 18:21:29,300] Search_Post - Step 02: Enter to Search textbox
-[INFO ] [2022-09-05 18:21:29,385] Search_Post - Step 03: Click to Search Posts button
-[INFO ] [2022-09-05 18:21:30,411] Search_Post - Step 04: Verify search table contains 'Live Coding Title 1939
-[INFO ] [2022-09-05 18:21:30,480]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:30,480] Search_Post - Step 05: Verify search table contains 'automationfc
-[INFO ] [2022-09-05 18:21:30,524]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:30,524] Search_Post - Step 06: Open End User site
-[INFO ] [2022-09-05 18:21:37,237] Search_Post - Step 07: Verify Post infor displayed at Home Page
-[INFO ] [2022-09-05 18:21:37,276]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:37,312]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:37,350]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:37,390]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:37,390] Search_Post - Step 08: Click to post title
-[INFO ] [2022-09-05 18:21:37,957] Search_Post - Step 09: Verify Post infor displayed at Post detail Page
-[INFO ] [2022-09-05 18:21:38,009]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:38,052]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:38,087]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:38,123]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:38,129] Edit_Post - Step 01: Open Admin Site
-[INFO ] [2022-09-05 18:21:38,751] Edit_Post - Step 02: Click to 'Posts' menu link
-[INFO ] [2022-09-05 18:21:39,394] Edit_Post - Step 03: Enter to Search textbox
-[INFO ] [2022-09-05 18:21:39,460] Edit_Post - Step 04: Click to Search Posts button
-[INFO ] [2022-09-05 18:21:40,457] Edit_Post - step 05: Click to Post title link and navigate to Edit Post Page
-[INFO ] [2022-09-05 18:21:41,909] Edit_Post - Step 06: Enter to Post title
-[INFO ] [2022-09-05 18:21:42,369] Edit_Post - Step 07: Enter to body
-[INFO ] [2022-09-05 18:21:43,334] Edit_Post - Step 08: Click to update button 
-[INFO ] [2022-09-05 18:21:43,899] Edit_Post - Step 09: Verify post update message is displayed
-[INFO ] [2022-09-05 18:21:44,238]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:44,239] Edit_Post - Step 10: Open 'Search Post' page
-[INFO ] [2022-09-05 18:21:44,915] Edit_Post - Step 11: Enter to Search textbox
-[INFO ] [2022-09-05 18:21:44,985] Edit_Post - Step 12: Click to Search Posts button
-[INFO ] [2022-09-05 18:21:46,008] Edit_Post - Step 13: Verify search table contains 'Edit title 1939
-[INFO ] [2022-09-05 18:21:46,071]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:46,071] Edit_Post - Step 14: Verify search table contains 'automationfc
-[INFO ] [2022-09-05 18:21:46,114]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:46,114] Edit_Post - Step 15: Open End User site
-[INFO ] [2022-09-05 18:21:46,532] Edit_Post - Step 16: Verify Post infor displayed at Home Page
-[INFO ] [2022-09-05 18:21:46,576]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:46,617]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:46,659]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:46,696]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:46,697] Edit_Post - Step 17: Click to post title
-[INFO ] [2022-09-05 18:21:47,211] Edit_Post - Step 18: Verify Post infor displayed at Post detail Page
-[INFO ] [2022-09-05 18:21:47,270]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:47,306]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:47,341]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:47,378]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:47,383] Delete_Post - Step 01: Open Admin Site
-[INFO ] [2022-09-05 18:21:47,999] Delete_Post - Step 02: Click to 'Posts' menu link
-[INFO ] [2022-09-05 18:21:49,020] Delete_Post - Step 03: Enter to Search textbox
-[INFO ] [2022-09-05 18:21:49,086] Delete_Post - Step 04: Click to Search Posts button
-[INFO ] [2022-09-05 18:21:50,083] Delete_Post - step 05: Select Post Detail checkbox
-[INFO ] [2022-09-05 18:21:50,374] Delete_Post - step 06: Select Move to trash item in dropdown
-[INFO ] [2022-09-05 18:21:50,632] Delete_Post - step 07: Click to apply button
-[INFO ] [2022-09-05 18:21:51,622] Delete_Post - step 08: Verify 1 post moved to the Trash message is displayed
-[INFO ] [2022-09-05 18:21:51,680]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:51,680] Delete_Post - Step 09: Enter to Search textbox
-[INFO ] [2022-09-05 18:21:51,721] Delete_Post - Step 10: Click to Search Posts button
-[INFO ] [2022-09-05 18:21:52,700] Delete_Post - step 11: Verify 'No posts found' message is displayed
-[INFO ] [2022-09-05 18:21:52,754]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:52,754] Delete_Post - Step 12: Open End User site
-[INFO ] [2022-09-05 18:21:53,198] Delete_Post - Step 13: Verify Post title undisplayed at Home Page
-[INFO ] [2022-09-05 18:21:58,216]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:58,217] Delete_Post - Step 14: Enter to Search textbox
-[INFO ] [2022-09-05 18:21:58,266] Delete_Post - Step 15: Click to Search Posts button
-[INFO ] [2022-09-05 18:21:58,708] Delete_Post - step 16: Verify 'Nothing Found' message is displayed
-[INFO ] [2022-09-05 18:21:58,755]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-05 18:21:58,760] OS name = mac os x
-[INFO ] [2022-09-05 18:21:58,760] Driver instance name = firefoxdriver: firefox on mac (589485a8-1744-4352-85cf-f9df36fc0f25)
+[INFO ] [2022-09-07 17:03:52,840] Register - step 01: open register page
+[INFO ] [2022-09-07 17:03:54,306] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-09-07 17:03:54,361] Register - step 03: enter to lastName textbox with value is 'FC'
+[INFO ] [2022-09-07 17:03:54,412] Register - step 04: enter to email textbox with value is 'automationfc7604@hotmail.com'
+[INFO ] [2022-09-07 17:03:54,500] Register - step 05: enter to password textbox with value is '123456'
+[INFO ] [2022-09-07 17:03:55,333] Register - step 06: enter to password textbox with value is '123456'
+[INFO ] [2022-09-07 17:03:55,382] Register - step 07: click register button
+[INFO ] [2022-09-07 17:03:56,196] Register - step 08: verify register success message is displayed 
+[INFO ] [2022-09-07 17:03:56,286] Register - step 09: click logout button
+[INFO ] [2022-09-07 17:03:56,945] Login - step 01: open login page
+[INFO ] [2022-09-07 17:03:57,447] Login - step 02: enter email to textbox with value is 'automationfc7604@hotmail.com'
+[INFO ] [2022-09-07 17:03:57,500] Login - step 03: enter password to textbox with value is '123456'
+[INFO ] [2022-09-07 17:03:57,552] Login - step 04: click login button
+[INFO ] [2022-09-07 17:03:58,286] Login - step 05: Verify 'My Account' link is displayed
+[INFO ] [2022-09-07 17:03:58,345] My Account - step 01: Navigate 'My Account' page
+[INFO ] [2022-09-07 17:03:58,830] My Account - step 02: Verify 'Customer Page' link is displayed
+[INFO ] [2022-09-07 17:04:08,912] My Account - step 03: Verify 'First Name' value is correctly
+[INFO ] [2022-09-07 17:04:08,949] My Account - step 04: Verify 'Last Name' value is correctly
+[INFO ] [2022-09-07 17:04:08,978] My Account - step 05: Verify 'Email' value is correctly
+[INFO ] [2022-09-07 17:04:09,009] OS name = mac os x
+[INFO ] [2022-09-07 17:04:09,009] Driver instance name = firefoxdriver: firefox on mac (b3f58fd4-abf4-4245-8faf-46bc7924212d)

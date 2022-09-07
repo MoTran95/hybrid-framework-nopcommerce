@@ -3,6 +3,7 @@ package com.nopcommerce.user;
 import org.testng.annotations.Test;
 
 import com.github.javafaker.Faker;
+import com.nopcommerce.data.UserDataMapper;
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
@@ -22,20 +23,16 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class Level_18_Fake_Data extends BaseTest {
+public class Level_18_Data_Driven extends BaseTest {
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
 		homePage = PageGeneratorManager.getUserHomePage(driver);
-		dataFaker = DataHelper.getDataHelper();
-		firstName = dataFaker.getFirstName();
-		lastName = dataFaker.getLastName();
-		password = dataFaker.getPassword();
-		email = dataFaker.getEmailAddress();
-		date = "10";
-		month = "May";
-		year = "1998";
+		userData = UserDataMapper.getUserData();
+		email = userData.getEmailAddress()  + generateFakeNumber() + "@hotmail.com";
+		System.out.println(userData.getSubjects().get(0).getName());
+		System.out.println(userData.getSubjects().get(1).getName());
 
 	}
 
@@ -45,11 +42,11 @@ public class Level_18_Fake_Data extends BaseTest {
 		registerPage = homePage.openRegisterPage();
 		
 		registerPage.clickToRadioButtonByLabel(driver,"Female");
-		log.info("Register - step 02: enter to firstname textbox with value is '" + firstName + "'");
-		registerPage.inputToTextboxByID(driver, "FirstName", firstName);
+		log.info("Register - step 02: enter to firstname textbox with value is '" + userData.getFirstName() + "'");
+		registerPage.inputToTextboxByID(driver, "FirstName", userData.getFirstName());
 
-		log.info("Register - step 03: enter to lastName textbox with value is '" + lastName + "'");
-		registerPage.inputToTextboxByID(driver, "LastName", lastName);
+		log.info("Register - step 03: enter to lastName textbox with value is '" + userData.getLastName() + "'");
+		registerPage.inputToTextboxByID(driver, "LastName", userData.getLastName());
 
 		log.info("Register - step 04: enter to email textbox with value is '" + email + "'");
 		registerPage.inputToTextboxByID(driver, "Email", email);
@@ -57,15 +54,15 @@ public class Level_18_Fake_Data extends BaseTest {
 		registerPage.clickToCheckboxByLabel(driver,"Newsletter");
 
 
-		log.info("Register - step 05: enter to password textbox with value is '" + password + "'");
-		registerPage.inputToTextboxByID(driver, "Password", password);
-		registerPage.selectToDropdownByName(driver, "DateOfBirthDay", date);
-		registerPage.selectToDropdownByName(driver, "DateOfBirthMonth", month);
-		registerPage.selectToDropdownByName(driver, "DateOfBirthYear", year);
+		log.info("Register - step 05: enter to password textbox with value is '" + userData.getPassword() + "'");
+		registerPage.inputToTextboxByID(driver, "Password", userData.getPassword());
+		registerPage.selectToDropdownByName(driver, "DateOfBirthDay", userData.getDate());
+		registerPage.selectToDropdownByName(driver, "DateOfBirthMonth", userData.getMonth());
+		registerPage.selectToDropdownByName(driver, "DateOfBirthYear", userData.getYear());
 
-		log.info("Register - step 06: enter to password textbox with value is '" + password + "'");
+		log.info("Register - step 06: enter to password textbox with value is '" + userData.getPassword() + "'");
 
-		registerPage.inputToTextboxByID(driver, "ConfirmPassword", password);
+		registerPage.inputToTextboxByID(driver, "ConfirmPassword", userData.getPassword());
 		log.info("Register - step 07: click register button");
 		registerPage.clickToButtonByText(driver, "Register");
 
@@ -82,8 +79,8 @@ public class Level_18_Fake_Data extends BaseTest {
 		loginPage = homePage.openLoginPage();
 		log.info("Login - step 02: enter email to textbox with value is '" + email + "'");
 		loginPage.inputToTextboxByID(driver, "Email", email);
-		log.info("Login - step 03: enter password to textbox with value is '" + password + "'");
-		loginPage.inputToTextboxByID(driver, "Password", password);
+		log.info("Login - step 03: enter password to textbox with value is '" + userData.getPassword() + "'");
+		loginPage.inputToTextboxByID(driver, "Password", userData.getPassword());
 
 		log.info("Login - step 04: click login button");
 		loginPage.clickToButtonByText(driver, "Log in");
@@ -100,9 +97,9 @@ public class Level_18_Fake_Data extends BaseTest {
 		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());
 		customerInforPage.sleepInSecond(10);
 		log.info("My Account - step 03: Verify 'First Name' value is correctly");
-		Assert.assertEquals(customerInforPage.getTextboxValueByID(driver,"FirstName"), firstName);
+		Assert.assertEquals(customerInforPage.getTextboxValueByID(driver,"FirstName"), userData.getFirstName());
 		log.info("My Account - step 04: Verify 'Last Name' value is correctly");
-		Assert.assertEquals(customerInforPage.getTextboxValueByID(driver,"LastName"), lastName);
+		Assert.assertEquals(customerInforPage.getTextboxValueByID(driver,"LastName"), userData.getLastName());
 		log.info("My Account - step 05: Verify 'Email' value is correctly");
 		Assert.assertEquals(customerInforPage.getTextboxValueByID(driver,"Email"), email);
 
@@ -115,12 +112,12 @@ public class Level_18_Fake_Data extends BaseTest {
 	}
 
 	private WebDriver driver;
-	private DataHelper dataFaker;
-	private String email, firstName, lastName, password;
+	private String email;
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;
 	private UserLoginPageObject loginPage;
 	private UserCustomerInforPageObject customerInforPage;
-	private String date, month, year;
+	UserDataMapper userData;
+
 
 }
