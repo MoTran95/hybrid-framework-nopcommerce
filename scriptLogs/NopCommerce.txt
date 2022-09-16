@@ -1,21 +1,21 @@
-[INFO ] [2022-09-07 17:03:52,840] Register - step 01: open register page
-[INFO ] [2022-09-07 17:03:54,306] Register - step 02: enter to firstname textbox with value is 'Automation'
-[INFO ] [2022-09-07 17:03:54,361] Register - step 03: enter to lastName textbox with value is 'FC'
-[INFO ] [2022-09-07 17:03:54,412] Register - step 04: enter to email textbox with value is 'automationfc7604@hotmail.com'
-[INFO ] [2022-09-07 17:03:54,500] Register - step 05: enter to password textbox with value is '123456'
-[INFO ] [2022-09-07 17:03:55,333] Register - step 06: enter to password textbox with value is '123456'
-[INFO ] [2022-09-07 17:03:55,382] Register - step 07: click register button
-[INFO ] [2022-09-07 17:03:56,196] Register - step 08: verify register success message is displayed 
-[INFO ] [2022-09-07 17:03:56,286] Register - step 09: click logout button
-[INFO ] [2022-09-07 17:03:56,945] Login - step 01: open login page
-[INFO ] [2022-09-07 17:03:57,447] Login - step 02: enter email to textbox with value is 'automationfc7604@hotmail.com'
-[INFO ] [2022-09-07 17:03:57,500] Login - step 03: enter password to textbox with value is '123456'
-[INFO ] [2022-09-07 17:03:57,552] Login - step 04: click login button
-[INFO ] [2022-09-07 17:03:58,286] Login - step 05: Verify 'My Account' link is displayed
-[INFO ] [2022-09-07 17:03:58,345] My Account - step 01: Navigate 'My Account' page
-[INFO ] [2022-09-07 17:03:58,830] My Account - step 02: Verify 'Customer Page' link is displayed
-[INFO ] [2022-09-07 17:04:08,912] My Account - step 03: Verify 'First Name' value is correctly
-[INFO ] [2022-09-07 17:04:08,949] My Account - step 04: Verify 'Last Name' value is correctly
-[INFO ] [2022-09-07 17:04:08,978] My Account - step 05: Verify 'Email' value is correctly
-[INFO ] [2022-09-07 17:04:09,009] OS name = mac os x
-[INFO ] [2022-09-07 17:04:09,009] Driver instance name = firefoxdriver: firefox on mac (b3f58fd4-abf4-4245-8faf-46bc7924212d)
+[INFO ] [2022-09-09 17:23:30,871] Register - step 01: open register page
+[INFO ] [2022-09-09 17:23:32,338] Register - step 02: enter to firstname textbox with value is 'Automation'
+[INFO ] [2022-09-09 17:23:32,424] Register - step 03: enter to lastName textbox with value is 'FC'
+[INFO ] [2022-09-09 17:23:32,467] Register - step 04: enter to email textbox with value is 'automationfc348@hotmail.com'
+[INFO ] [2022-09-09 17:23:32,556] Register - step 05: enter to password textbox with value is '123456'
+[INFO ] [2022-09-09 17:23:33,370] Register - step 06: enter to password textbox with value is '123456'
+[INFO ] [2022-09-09 17:23:33,412] Register - step 07: click register button
+[INFO ] [2022-09-09 17:23:34,231] Register - step 08: verify register success message is displayed 
+[INFO ] [2022-09-09 17:23:34,313] Register - step 09: click logout button
+[INFO ] [2022-09-09 17:23:34,967] Login - step 01: open login page
+[INFO ] [2022-09-09 17:23:35,432] Login - step 02: enter email to textbox with value is 'automationfc348@hotmail.com'
+[INFO ] [2022-09-09 17:23:35,482] Login - step 03: enter password to textbox with value is '123456'
+[INFO ] [2022-09-09 17:23:35,523] Login - step 04: click login button
+[INFO ] [2022-09-09 17:23:36,295] Login - step 05: Verify 'My Account' link is displayed
+[INFO ] [2022-09-09 17:23:36,356] My Account - step 01: Navigate 'My Account' page
+[INFO ] [2022-09-09 17:23:36,831] My Account - step 02: Verify 'Customer Page' link is displayed
+[INFO ] [2022-09-09 17:23:46,874] My Account - step 03: Verify 'First Name' value is correctly
+[INFO ] [2022-09-09 17:23:46,910] My Account - step 04: Verify 'Last Name' value is correctly
+[INFO ] [2022-09-09 17:23:46,939] My Account - step 05: Verify 'Email' value is correctly
+[INFO ] [2022-09-09 17:23:46,972] OS name = mac os x
+[INFO ] [2022-09-09 17:23:46,972] Driver instance name = firefoxdriver: firefox on mac (7acaa777-f289-4e2e-8550-539e05e91473)
